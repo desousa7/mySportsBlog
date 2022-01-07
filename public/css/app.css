@@ -561,12 +561,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3.75rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -613,12 +613,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.w-44 {
-  width: 11rem;
-}
-
 .w-1\/5 {
   width: 20%;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-1\/6 {
@@ -702,12 +702,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .border {
@@ -766,8 +766,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(222 247 236 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 30 30 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -778,16 +788,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 47 63 / var(--tw-bg-opacity));
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(200 30 30 / var(--tw-bg-opacity));
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -883,6 +883,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 3.75rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -891,12 +895,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-3 {
@@ -913,14 +917,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
 }
 
 .text-left {
@@ -1035,6 +1031,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(4 108 78 / var(--tw-text-opacity));
 }
 
+.text-gray-50 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1045,6 +1046,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(37 47 63 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(200 30 30 / var(--tw-text-opacity));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(210 214 220 / var(--tw-text-opacity));
@@ -1053,16 +1059,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(159 166 178 / var(--tw-text-opacity));
-}
-
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
-}
-
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(200 30 30 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1094,6 +1090,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
+}
+
+.background-image2
+{
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/15/22/10/writing-pad-3229690_960_720.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
 }
 
 .hover\:bg-blue-700:hover {

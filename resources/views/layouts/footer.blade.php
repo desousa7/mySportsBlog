@@ -33,21 +33,11 @@
             <h3 class="text-l sm:font-bold text-gray-400">
                 Find Me
             </h3>
-
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
+
                 <li class="pb-1">
-                    <a href="/">
-                        About me
-                    </a>
-                </li>
-                <li class="pb-1">
-                    <a href="/">
-                        Email
-                    </a>
-                </li>
-                <li class="pb-1">
-                    <a href="/">
-                        Instagram
+                    <a href="/contacts">
+                        Contacts
                     </a>
                 </li>
             </ul>
@@ -60,18 +50,18 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
+                    <a href="blog/manchester-united-slump-agian">
                         Manchester United Slump...agian!
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
+                    <a href="http://127.0.0.1:8000/blog/liverpool-covid-19-outbreak">
                         Liverpool Covid-19 outbreak
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Endland Ashes debacle!
+                    <a href="blog/endland-s-ashes-debacle">
+                        Endland's Ashes debacle!
                     </a>
                 </li>
                 <li class="pb-1">

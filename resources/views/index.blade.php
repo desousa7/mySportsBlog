@@ -10,7 +10,8 @@
                 <p class="text-center text-white-700 py-2 px-4 font-bold text-xl uppercase">
                     This blog has been designed and created to bring all sports lovers together and create a great
                     community. There will be loads of sports content from around the world and and a chance for us
-                    all to share our views and also have some friendly-banter.
+                    all to share our views and also have some friendly-banter. Feel free to get intouch with me via email 
+                    and drop me a follow on instagram.
                 </p>
             </div>
         </div>

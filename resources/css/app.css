@@ -13,3 +13,13 @@
     background-size: cover;
     height: 600px;
 }
+
+.background-image2
+{
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/15/22/10/writing-pad-3229690_960_720.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
