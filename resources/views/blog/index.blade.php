@@ -8,7 +8,18 @@
         </h1>
     </div>
 </div>
+<br>
 
+@if (Auth::check())
+    <div class = "pt-15 w-4/5 m-auto">
+        <a href="/blog/create" 
+        class ="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-5xl">
+        Create Post
+        </a>
+    </div>
+@endif
+
+@foreach ($posts as $post)
 
 <div class ="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
     <div>
@@ -16,22 +27,24 @@
     </div>
     <div>
         <h2 class="text-gray-700 font-bold text-5xl pb-4">
-        Manchester United Slump...agian!
+        {{$post->title}}
         </h2>
 
         <span class="text-gray-500">
-            By&nbsp;<span class="font-bold italic text-gray-800">Reuben De Sousa</span>&nbsp;,1 day ago
+            By&nbsp;<span class="font-bold italic text-gray-800">{{$post->user->name}}</span>&nbsp;, Created on {{date('jS M Y', strtotime($post->updated_at))}}
         </span>
 
         <p class="text-xl text-gray-700 pt-8 leading-8 font-light">
-            Manchester United have slumped to another defeat in the Premier League as they lose at
-            home to Wolverhampton Wanderers 0-1. New interim boss Ralf Rangnick said that, "Performances
-            need to get better and we need to be more physically present." Fans at Old Trafford have been 
-            unhappy with performances under the new boss and his tactics are already being questioned.
+            {{$post->description}}
         </p>
-
-
+        <br>
+        <a href ="/blog/{{$post->slug}}" class ="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-5xl">
+            Keep reading
+        </a>
     </div>
 </div>
+
+@endforeach 
+
 
 @endsection
