@@ -55,7 +55,7 @@
 
         <div>
             <h3 class="text-l sm:font-bold text-gray-400">
-                Latest posts
+                Quick Links
             </h3>
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
