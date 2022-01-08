@@ -50,7 +50,7 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="blog/manchester-united-slump-agian">
+                    <a href="http://127.0.0.1:8000/blog/manchester-united-slump-agian">
                         Manchester United Slump...agian!
                     </a>
                 </li>
@@ -60,13 +60,8 @@
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="blog/endland-s-ashes-debacle">
+                    <a href="http://127.0.0.1:8000/blog/endland-s-ashes-debacle">
                         Endland's Ashes debacle!
-                    </a>
-                </li>
-                <li class="pb-1">
-                    <a href="/">
-                        Peter 'Snake-Bite' Wright world champ once more!
                     </a>
                 </li>
             </ul>

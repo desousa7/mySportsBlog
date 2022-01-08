@@ -18,5 +18,8 @@
         {{ $post->description }}
     </p>
 </div>
+<div>
+    @comments(['model' => $post])
+</div>
 
 @endsection 
