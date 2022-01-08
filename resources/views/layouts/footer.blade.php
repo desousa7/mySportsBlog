@@ -60,8 +60,8 @@
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="http://127.0.0.1:8000/blog/endland-s-ashes-debacle">
-                        Endland's Ashes debacle!
+                    <a href="http://127.0.0.1:8000/blog/england-s-ashes-debacle">
+                        England's Ashes debacle!
                     </a>
                 </li>
             </ul>

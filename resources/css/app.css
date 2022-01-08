@@ -4,6 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 .background-image
 {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg');
