@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -25,23 +27,41 @@
                     </a>
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                    <a class="no-underline hover:underline" href="/">Home</a>
-                    <a class="no-underline hover:underline" href="/blog">Blog</a>
+                    <a class="text-gray-100 no-underline hover:underline" href="/">Home</a>
+                    <a class="text-gray-100 no-underline hover:underline" href="/blog">Blog</a>
                     @guest
-                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="text-gray-100 no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
-                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="text-gray-100 no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @else
-                        <span>{{ Auth::user()->name }}</span>
+                    <span>{{ Auth::user()->name }}</span>
 
-                        <a href="{{ route('logout') }}"
-                           class="no-underline hover:underline"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                            {{ csrf_field() }}
-                        </form>
+                    <a href="{{ route('logout') }}"
+                        class="text-gray-100 no-underline hover:underline"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                        {{ csrf_field() }}
+                    </form>
+                    <notification :userid="{{auth()->id()}}" :unreads="{{auth()->user()->unreadNotifications}}"></notification>
+                    <li class="dropdown" id="markasread" onclick="markNotificationAsRead('{{count(auth()->user()->unreadNotifications)}}')">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                           <span class="text-gray-100 glyphicon glyphicon-globe">Notifications </span><span class="badge">{{count(auth()->user()->unreadNotifications)}}</span>
+                        </a>
+
+                        <ul class="dropdown-content" role="menu">
+                            <li>
+                                @forelse(auth()->user()->unreadNotifications as $notifications)
+                                    @include(Str::snake(class_basename($notifications->type))) 
+                                    @empty
+                                    <a href="#">No Notifications</a>                         
+                                @endforelse
+                            </li>
+                        </ul>
+                    </li>
+
+                     
                     @endguest
                 </nav>
             </div>

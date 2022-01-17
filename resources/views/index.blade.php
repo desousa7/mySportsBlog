@@ -16,7 +16,8 @@
             </div>
         </div>
     </div>
-
+    <script src="{{ asset('/js/notifications.js') }}"></script>
+    @yield('js')
 
 
 @endsection

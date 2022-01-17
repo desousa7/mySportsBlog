@@ -6,6 +6,8 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
 .background-image
 {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg');
@@ -25,3 +27,26 @@
     background-size: cover;
     height: 400px;
 }
+
+.glyphicon-globe:before {
+    content: "\e135";
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

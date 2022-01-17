@@ -7,22 +7,22 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
+                    <a class="text-gray-100" href="/">
                         Home
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/blog">
+                    <a class="text-gray-100" href="/blog">
                         Blog
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/login">
+                    <a class="text-gray-100" href="/login">
                         Login
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/register">
+                    <a class="text-gray-100" href="/register">
                         Register
                     </a>
                 </li>
@@ -36,7 +36,7 @@
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
 
                 <li class="pb-1">
-                    <a href="/contacts">
+                    <a class="text-gray-100" href="/contacts">
                         Contacts
                     </a>
                 </li>
@@ -50,17 +50,17 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="http://127.0.0.1:8000/blog/manchester-united-slump-agian">
+                    <a class="text-gray-100" href="http://127.0.0.1:8000/blog/manchester-united-slump-agian">
                         Manchester United Slump...agian!
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="http://127.0.0.1:8000/blog/liverpool-covid-19-outbreak">
+                    <a class="text-gray-100" href="http://127.0.0.1:8000/blog/liverpool-covid-19-outbreak">
                         Liverpool Covid-19 outbreak
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="http://127.0.0.1:8000/blog/england-s-ashes-debacle">
+                    <a class="text-gray-100" href="http://127.0.0.1:8000/blog/england-s-ashes-debacle">
                         England's Ashes debacle!
                     </a>
                 </li>
@@ -69,6 +69,6 @@
 
     </div>
     <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6">
-        Copyright 2021-2022 My Sports Blog. All Rights Reserved.
+        Copyright 2021-2022 MySportsBlog. All Rights Reserved.
     </p>
 </footer>
