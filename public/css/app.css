@@ -405,6 +405,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20%;
 }.w-1\/6{
   width: 16.666667%;
+}.w-2\/5{
+  width: 40%;
 }.cursor-pointer{
   cursor: pointer;
 }.select-none{
@@ -541,6 +543,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }.pt-10{
   padding-top: 2.5rem;
 }.pt-4{
@@ -569,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }.pb-8{
   padding-bottom: 2rem;
+}.pt-1{
+  padding-top: 0.25rem;
+}.pb-0{
+  padding-bottom: 0;
 }.text-left{
   text-align: left;
 }.text-center{

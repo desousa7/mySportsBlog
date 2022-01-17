@@ -11,7 +11,7 @@
                     Email    
                 </h3>
                 <h1>
-                    desousa.reuben7@gmail.com
+                    desousa.reuben7@gmail.com 
                 </h1>
                 <h3 class="text-center text-white-700 py-2 px-4 font-bold text-xl uppercase">
                     Instagram    

@@ -27,8 +27,8 @@
                     </a>
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                    <a class="text-gray-100 no-underline hover:underline" href="/">Home</a>
-                    <a class="text-gray-100 no-underline hover:underline" href="/blog">Blog</a>
+                    <a class="text-gray-100 no-underline hover:underline" href="/">{{ $home }}</a>
+                    <a class="text-gray-100 no-underline hover:underline" href="/blog">{{ $blog }}</a>
                     @guest
                         <a class="text-gray-100 no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
@@ -47,7 +47,7 @@
                     <notification :userid="{{auth()->id()}}" :unreads="{{auth()->user()->unreadNotifications}}"></notification>
                     <li class="dropdown" id="markasread" onclick="markNotificationAsRead('{{count(auth()->user()->unreadNotifications)}}')">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                           <span class="text-gray-100 glyphicon glyphicon-globe">Notifications </span><span class="badge">{{count(auth()->user()->unreadNotifications)}}</span>
+                           <span class="text-gray-100 glyphicon glyphicon-globe no-underline hover:underline">Notifications </span><span class="badge">{{count(auth()->user()->unreadNotifications)}}</span>
                         </a>
 
                         <ul class="dropdown-content" role="menu">

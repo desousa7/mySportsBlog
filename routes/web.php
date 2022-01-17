@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\memberAgeClass;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,8 @@ use App\Http\Controllers\PostsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 Route::get('/', [PagesController::class, 'index']);
 
 Route::get('/contacts', [PagesController::class, 'contacts']);
