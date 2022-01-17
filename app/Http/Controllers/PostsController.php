@@ -23,7 +23,7 @@ class PostsController extends Controller
     {
         return view('blog.index')
         //->with('posts', Post::orderBy('updated_at', 'DESC')->get());
-        ->with('posts', Post::orderBy('updated_at', 'DESC')->paginate(3));
+        ->with('posts', Post::orderBy('updated_at', 'DESC')->paginate(2));
     }
 
     /**
@@ -116,7 +116,7 @@ class PostsController extends Controller
             ]);
 
         return redirect('/blog')
-            ->with('message', 'Your post has been updated!');
+            ->with('message', 'Your post was updated!');
     }
 
     /**
